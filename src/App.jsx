@@ -31,6 +31,7 @@ function App() {
     <section className="App">
       {users.map((user) => (
         <TwitterCard
+          key={user.username}
           formatUsername={formatAt}
           username={user.username}
           initialIsFollowing={user.isFollowing}
